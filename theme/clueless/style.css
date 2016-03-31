@@ -1,0 +1,279 @@
+body{
+	background:black;
+	color:white;
+	margin:0px;
+	padding:0px;
+	font-size:16px;
+	line-height:18px;
+	letter-spacing:1px;
+	width:100%;
+	min-width:600px;
+}
+h2 {
+	font-family:'Aldrich', sans-serif;
+}
+a , a:visited{
+	color:#bfff00;
+	text-decoration:none;
+}
+#header{
+	height:150px;
+	width:100%;
+	clear:both;
+	float:left;
+	z-index:100;
+}
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+	padding-bottom:10px;
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 0 0;
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	/*background:#eee;*/		/* right column background colour */
+}
+.threecol .colmid {
+	right:25%;			/* width of the right column */
+	/*background:#fff;*/		/* center column background colour */
+}
+.threecol .colleft {
+	right:50%;			/* width of the middle column */
+	/*background:#f4f4f4;*/	/* left column background colour */
+}
+.threecol .col1 {
+	width:48%;			/* width of center column content (column width minus padding on either side) */
+	left:101%;			/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width:24%;			/* Width of left column content (column width minus padding on either side) */
+	left:27%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width:23%;			/* Width of right column content (column width minus padding on either side) */
+	left:79%;			/* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+/* Footer styles */
+#footer {
+	font-family: 'Droid Sans', sans-serif;
+	background:#04070a;
+	padding-top:3px;
+	text-align:center;
+	font-size:14px;
+	height:25px;
+	clear:both;
+	width:100%;
+	position:fixed;
+	bottom:0;
+}
+.box {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 14px;
+	margin:auto 
+}
+input.textbox{
+	font-family: 'Droid Sans', sans-serif;
+	padding-left:6px;
+	height:22px;
+	border:none;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+}
+input.textbox:focus {
+	outline:none;
+}
+.button {
+	font-family:'Aldrich', sans-serif;
+	font-weight:bold;
+	width:151px;
+	height:37px;
+	padding-top:3px;
+	color:#2995c3;
+	background:url(button.png) no-repeat;
+	border:none;
+}
+.button:hover {
+	color:#fff;
+	background:url(buttonmouseover.png) no-repeat -2px;
+}
+#login {
+	padding:5 15 5 15;
+	width:50%;
+	margin:auto;
+	position:relative;
+}
+#regform{
+	margin:auto;
+}
+#tablereg{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 14px;
+	margin:auto;
+}
+#tablereg tr {
+	height:40px;
+}
+#tablereg td {
+	width:50%;
+}
+#tablelogin 
+{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 14px;
+	margin:auto;
+}
+#tablelogin tr
+{
+	height:40px;
+}
+#tablelogin td {
+	width:50%;
+}
+#leaderboard {
+	width:600px;
+	display:block;
+	margin:auto;
+	text-align:center;
+	font-family:'Droid Sans', sans-serif;
+}
+#leaderboard tr.first {
+	color:#e2efcf;
+	height:40px;
+}
+#navbar{
+	font-family:'Aldrich', sans-serif;
+	font-weight:bold;
+	font-size:17px;
+	width:200px;
+	list-style:none;
+	padding:0;
+}
+#navbar li {
+	width:244px;
+	height:26px;
+	line-height:26px;
+	margin-top:10px;
+	background:url(menumouseover.png) no-repeat -244px;
+	-webkit-transition: background 0.2s ease;
+  	-moz-transition: background 0.2s ease;
+  	-o-transition: background 0.2s ease;
+ 	transition: background 0.2s ease;
+}
+#navbar a {
+	display:block;
+	width:95%;
+}
+#navbar a, #navbar a:visited{
+	padding-left:20px;
+	color:#3496b9;
+	text-decoration:none;
+}
+#navbar a:hover {
+	color:#fe9041;
+}
+#navbar li:hover {
+	background:url(menumouseover.png) no-repeat;
+	-webkit-transition: all 0.3s ease;
+  	-moz-transition: all 0.3s ease;
+  	-o-transition: all 0.3s ease;
+ 	transition: all 0.3s ease;
+}
+#center_contentplayer{
+	padding:5 15 5 15;
+	margin:auto;
+	text-align:center;
+	position:relative;
+}
+#center_content{
+	padding:5 15 5 15;
+	margin:auto;
+	text-align:center;
+	position:relative;
+}
+#center_contentadmin{
+	padding:5 15 5 15;
+	margin:auto;
+	position:relative;
+}
+#sidebaradmin{
+	padding:5 15 5 15;
+	width:200px;
+	margin:auto;
+	right:0;
+	position:relative;
+	z-index:100;
+}
+#welcome{
+	position:absolute;
+	right:20px;
+	top:0px;
+	font-size:14px;
+}
+
+#watermarkleft{
+	background:url(left.jpg) no-repeat top;
+	background-position:-100px 0;
+	width:523px;
+	height:1000px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	opacity:.6;
+	z-index:-100;
+}
+#watermarkright{
+	background:url(right.jpg) no-repeat right;
+	width:100%;
+	height:1000px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	opacity:.6;
+	z-index:-100;
+}
+#logo{
+	background:url(clueless_f.png) no-repeat;
+	width:527px;
+	height:69px;
+	margin:auto;
+	margin-top:30px;
+	-webkit-transition: all 0.3s ease;
+  	-moz-transition: all 0.3s ease;
+  	-o-transition: all 0.3s ease;
+ 	transition: all 0.3s ease;
+ 	z-index:100;
+}
+#logo img {
+	margin-left:33px;
+}
+#logo:hover {
+	background:url(clueless_f.png) no-repeat 33px;
+	-webkit-transition: all 0.3s ease;
+  	-moz-transition: all 0.3s ease;
+  	-o-transition: all 0.3s ease;
+ 	transition: all 0.3s ease;
+}
+img {
+	border:none;
+}
